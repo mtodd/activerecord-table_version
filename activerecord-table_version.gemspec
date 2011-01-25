@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = %q{activerecord-version_table}
+  s.name = %q{activerecord-table_version}
   s.version = "0.0.1"
   
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -8,25 +8,25 @@ Gem::Specification.new do |s|
   s.description = %q{Specify a table name with a version number}
   s.email = %q{chiology@gmail.com}
   s.files = [
-    "activerecord-version_table.gemspec",
+    "activerecord-table_version.gemspec",
     "Gemfile",
     "Gemfile.lock",
-    "lib/activerecord/version_table.rb",
-    "lib/activerecord-version_table.rb",
+    "lib/activerecord/table_version.rb",
+    "lib/activerecord-table_version.rb",
     "lib/activerecord.rb",
     "Rakefile",
     "Readme.textile",
-    "spec/activerecord-version_table_spec.rb",
+    "spec/activerecord-table_version_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/mtodd/activerecord-version_table}
+  s.homepage = %q{http://github.com/mtodd/activerecord-table_version}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Specify a table name with a version number}
   s.test_files = [
     "spec/spec_helper.rb",
-    "spec/activerecord-version_table_spec.rb"
+    "spec/activerecord-table_version_spec.rb"
   ]
   
   if s.respond_to? :specification_version then
