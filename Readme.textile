@@ -13,6 +13,25 @@ end
 Model.table_name #=> "foos_2011_01_25"
 </code></pre>
 
+h2. Installation
+
+Depends on ActiveRecord. Works with both versions 2.3.10 and 3.0.3.
+
+Install the gem with:
+<code>gem install activerecord-table_version</code>
+
+Or, in your Gemfile:
+<code>gem "activerecord-table_version", "~> 0.0.1"</code>
+
+If you're on an older version of Rails:
+<code>config.gem "activerecord-table_version", :version => "~> 0.0.1"</code>
+
+h2. Migrations and Warning
+
+In order to apply migrations, you will need to refer to the @table_name@ of the model directly.
+
+NOTE: This has not seen extensive production use and this may result in problems in practice. You've been warned.
+
 h2. License and Copyright
 
 The MIT License
