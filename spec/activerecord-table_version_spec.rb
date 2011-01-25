@@ -3,7 +3,7 @@ require 'spec_helper'
 class Model < ActiveRecord::Base
 end
 
-describe ActiveRecord::VersionTable do
+describe ActiveRecord::TableVersion do
   
   describe "when not used" do
     
