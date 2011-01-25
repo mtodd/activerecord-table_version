@@ -1,7 +1,9 @@
 source :rubygems
 
-gem 'activerecord', '~> 3.0.3'
-# gem 'activerecord', '~> 2.3.10'
+case ("rails%s" % ENV.fetch("RAILS_VERSION", "3")).to_sym
+when :rails3; gem 'activerecord', '~> 3.0.3'
+when :rails2; gem 'activerecord', '~> 2.3.10'
+end
 
 group :development do
   gem "bundler", "~> 1.0.0"

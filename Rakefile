@@ -15,3 +15,10 @@ RSpec::Core::RakeTask.new do |t|
 end
 
 task :default => :spec
+
+task :all do
+  %w(2 3).each do |version|
+    puts "Testing Rails#{version}"
+    puts `env RAILS_VERSION=#{version} bundle install ; rake `
+  end
+end
