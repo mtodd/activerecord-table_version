@@ -1,8 +1,8 @@
 source :rubygems
 
 case ("rails%s" % ENV.fetch("RAILS_VERSION", "3")).to_sym
-when :rails3; gem 'activerecord', '~> 3.0.3'
-when :rails2; gem 'activerecord', '~> 2.3.10'
+when :rails3; gem 'activerecord', '~> 3.0.5'
+when :rails2; gem 'activerecord', '~> 2.3.11'
 end
 
 group :development do
