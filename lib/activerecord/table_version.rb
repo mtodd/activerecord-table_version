@@ -1,5 +1,4 @@
 require 'active_record'
-require 'active_support/concern'
 require 'active_support/core_ext/module/aliasing'
 
 class ActiveRecord::Base
